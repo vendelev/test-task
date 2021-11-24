@@ -1,0 +1,13 @@
+version: "3"
+services:
+    phptest:
+        build:
+            context: ./
+        image: ${COMPOSE_PROJECT_NAME}/phptest:latest
+        container_name: ${COMPOSE_PROJECT_NAME}-phptest
+        restart: always
+        ports:
+            - "8989:8989"
+        volumes:
+            - ./:/var/www
+        working_dir: /var/www

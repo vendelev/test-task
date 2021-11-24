@@ -1,0 +1,10 @@
+{
+    "name": "eggheads/testtask",
+    "description": "Тестовое задание",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Eggheads\\Testtask\\": "src/"
+        }
+    }
+}
